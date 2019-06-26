@@ -11,9 +11,10 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::get('/logout', 'Auth\LoginController@logout');
 
 Auth::routes();
