@@ -16,8 +16,8 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->string('question_type');
             $table->string('question');
+            $table->string('options');
             $table->timestamps();
         });
     }
